@@ -41,6 +41,22 @@ describe('Verify Dashboard Scenario', () => {
   })
 
   // Positive Case
+  it('Success View Details Customer', () => {
+    Dashboard.inputSearch(dashboardInputData.nameCreate)
+    cy.get(Dashboard.searchBtn).click()
+    cy.get(Dashboard.detailsBtn).click()
+
+    // assertions
+    cy.url().should('contain', Dashboard.detailsURL)
+    cy.get(Dashboard.nameDetails).should('contain.text', dashboardInputData.nameCreate)
+    cy.get(Dashboard.companyDetails).should('contain.text', dashboardInputData.companyCreate)
+    cy.get(Dashboard.addressDetails).should('contain.text', dashboardInputData.addressCreate)
+    cy.get(Dashboard.cityDetails).should('contain.text', dashboardInputData.cityCreate)
+    cy.get(Dashboard.phoneDetails).should('contain.text', dashboardInputData.phoneCreate)
+    cy.get(Dashboard.emailDetails).should('contain.text', dashboardInputData.emailCreate)
+  })
+
+  // Positive Case
   it('Success Edit Data Customer', () => {
     Dashboard.inputSearch(dashboardInputData.nameCreate)
     cy.get(Dashboard.searchBtn).click()

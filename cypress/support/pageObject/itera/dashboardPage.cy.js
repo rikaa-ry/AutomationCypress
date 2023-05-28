@@ -12,6 +12,7 @@ class dashboardPage{
     // url
     searchingURL = '/Dashboard?searching='
     dashboardURL = '/Dashboard'
+    detailsURL = '/Customer/Details'
 
     // field
     name = '#Name'
@@ -29,6 +30,14 @@ class dashboardPage{
     cityTable = 'tbody > :nth-child(2) > :nth-child(4)'
     phoneTable = 'tbody > :nth-child(2) > :nth-child(5)'
     emailTable = ':nth-child(2) > :nth-child(6)'
+
+    // details
+    nameDetails = '.dl-horizontal > :nth-child(2)'
+    companyDetails = '.dl-horizontal > :nth-child(4)'
+    addressDetails = '.dl-horizontal > :nth-child(6)'
+    cityDetails = '.dl-horizontal > :nth-child(8)'
+    phoneDetails = ':nth-child(10)'
+    emailDetails = ':nth-child(12)'
 
     inputName(name){
         cy.input(this.name, name)
