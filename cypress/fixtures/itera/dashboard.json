@@ -1,0 +1,14 @@
+{
+    "nameCreate": "Nagita",
+    "companyCreate": "RANS",
+    "addressCreate": "Andara",
+    "cityCreate": "Depok",
+    "phoneCreate": "081234567890",
+    "emailCreate": "nagita@email.com",
+    "nameEdit": "Nagita Edit",
+    "companyEdit": "RANS Edit",
+    "addressEdit": "Andara Edit",
+    "cityEdit": "Depok Edit",
+    "phoneEdit": "081234567881",
+    "emailEdit": "nagitaedit@email.com"
+}
